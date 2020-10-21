@@ -7,6 +7,8 @@ namespace ContainerVervoer_Logic.Models
 {
     public class Ship : IShip
     {
+        public int MinimumWeight { get; set; }
+        public int MaximumWeight { get; set; }
         public int CalculateBalance(int shipWeight)
         {
             throw new NotImplementedException();
