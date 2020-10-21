@@ -12,10 +12,26 @@ namespace ContainerVervoer_Form
 {
     public partial class Form1 : Form
     {
+        int length;
+        int width;
+
         public Form1()
         {
             InitializeComponent();
         }
-
+        //Start programma
+        private void Btn_Enter_Click(object sender, EventArgs e)
+        {
+            length = Convert.ToInt32(Nud_Length.Text);
+            width = Convert.ToInt32(Nud_Width.Text);
+            if(length > 9 || width > 9)
+            {
+                MessageBox.Show("The max value of length or width is 9.\nPlease use smaller numbers.");
+            }
+            else
+            {
+                MessageBox.Show("Length = " + length + " Width = " + width);
+            }
+        }
     }
 }
