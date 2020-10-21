@@ -7,24 +7,48 @@ namespace ContainerVervoer_Logic
 {
     public class Stack : IStack
     {
+        public List<Container> Containers { get; private set; }
+
+        public Stack()
+        {
+            Containers = new List<Container>();
+        }
         public void Add(Container container)
         {
-            throw new NotImplementedException();
+            Containers.Add(container);
         }
 
         public void Remove(Container container)
         {
-            throw new NotImplementedException();
+            Containers.Remove(container);
         }
 
         public int CheckValuablesInStack()
         {
-            throw new NotImplementedException();
+            int amountOfValuables = 0;
+            foreach (var container in Containers)
+            {
+                if (container.IsValuable)
+                {
+                    amountOfValuables++;
+                }
+            }
+
+            return amountOfValuables;
         }
 
         public int CheckCooledInStack()
         {
-            throw new NotImplementedException();
+            int amountOfCooled = 0;
+            foreach (var container in Containers)
+            {
+                if (container.IsCooled)
+                {
+                    amountOfCooled++;
+                }
+            }
+
+            return amountOfCooled;
         }
     }
 }

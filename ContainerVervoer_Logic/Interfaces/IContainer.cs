@@ -6,6 +6,5 @@ namespace ContainerVervoer_Interfaces
 {
     public interface IContainer
     {
-        int CheckWeight();
     }
 }
