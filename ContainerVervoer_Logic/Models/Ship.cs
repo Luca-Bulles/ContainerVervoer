@@ -7,21 +7,33 @@ namespace ContainerVervoer_Logic.Models
 {
     public class Ship : IShip
     {
-        public int MinimumWeight { get; set; }
-        public int MaximumWeight { get; set; }
-        public int CalculateBalance(int shipWeight)
+        public int MinimumWeight { get; private set; }
+        public int MaximumStackWeight { get; private set; }
+        public int ShipCapacity { get; private set; }
+        public int Length { get; private set; }
+        public int Width { get; private set; }
+        public int LeftSideRows { get; private set; }
+        public int RightSideRows { get; private set; }
+
+        public Ship(int minimumW, int maxStackW, int shipCap, int length, int width, int lSide, int rSide)
         {
-            throw new NotImplementedException();
+            MinimumWeight = minimumW;
+            MaximumStackWeight = maxStackW;
+            ShipCapacity = shipCap;
+            Length = length;
+            Width = width;
+            LeftSideRows = lSide;
+            RightSideRows = rSide;
         }
 
-        public int CalculateWeight(int weight)
+        public int CalculateOvercapacity()
         {
-            throw new NotImplementedException();
+            return ShipCapacity / 100 * 70;
         }
 
-        public int CalculateMargins(int baseMargin)
+        public int CalculateWeight()
         {
-            throw new NotImplementedException();
+            return Length * Width * MaximumStackWeight;
         }
     }
 }
