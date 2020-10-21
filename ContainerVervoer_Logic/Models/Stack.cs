@@ -29,9 +29,8 @@ namespace ContainerVervoer_Logic
             foreach (var container in Containers)
             {
                 if (container.IsValuable)
-                {
                     amountOfValuables++;
-                }
+                
             }
 
             return amountOfValuables;
@@ -43,9 +42,8 @@ namespace ContainerVervoer_Logic
             foreach (var container in Containers)
             {
                 if (container.IsCooled)
-                {
                     amountOfCooled++;
-                }
+                
             }
 
             return amountOfCooled;

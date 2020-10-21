@@ -7,24 +7,50 @@ namespace ContainerVervoer_Logic.Models
 {
     public class Row : IRow
     {
+        public List<Stack> Stacks { get; private set; }
+
+        public Row()
+        {
+            Stacks = new List<Stack>();
+        }
         public void AddStack(Stack stack)
         {
-            throw new NotImplementedException();
+            Stacks.Add(stack);
         }
 
         public void Remove(Stack stack)
         {
-            throw new NotImplementedException();
+            Stacks.Remove(stack);
         }
 
         public int CalculateTotalValuables()
         {
-            throw new NotImplementedException();
+            int totalValuablesInRow = 0;
+            foreach (var stack in Stacks)
+            {
+                for (int i = 0; i < stack.Containers.Count; i++)
+                {
+                    if (stack.Containers[i].IsValuable)
+                        totalValuablesInRow++;
+                    
+                }
+            }
+
+            return totalValuablesInRow;
         }
 
         public int CalculateTotalCooled()
         {
-            throw new NotImplementedException();
+            int totalCooledInRow = 0;
+            foreach (var stack in Stacks)
+            {
+                for (int i = 0; i < stack.Containers.Count; i++)
+                {
+                    if (stack.Containers[i].IsCooled)
+                        totalCooledInRow++;
+                }
+            }
+            return totalCooledInRow;
         }
     }
 }
