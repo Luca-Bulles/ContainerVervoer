@@ -8,23 +8,23 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\calin\\.nuget\\packages\\": {},
+    "C:\\Users\\luca_\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\calin\\Bureaublad\\Fontys\\Software (S)\\Semester 2 v2\\Algoritmiek\\ContainerVervoerOpdracht\\ContainerVervoer\\ContainerVervoer\\ContainerVervoer.csproj",
+      "projectUniqueName": "C:\\Users\\luca_\\source\\repos\\ContainerVervoer\\ContainerVervoer\\ContainerVervoer.csproj",
       "projectName": "ContainerVervoer",
-      "projectPath": "C:\\Users\\calin\\Bureaublad\\Fontys\\Software (S)\\Semester 2 v2\\Algoritmiek\\ContainerVervoerOpdracht\\ContainerVervoer\\ContainerVervoer\\ContainerVervoer.csproj",
-      "packagesPath": "C:\\Users\\calin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\calin\\Bureaublad\\Fontys\\Software (S)\\Semester 2 v2\\Algoritmiek\\ContainerVervoerOpdracht\\ContainerVervoer\\ContainerVervoer\\obj\\",
+      "projectPath": "C:\\Users\\luca_\\source\\repos\\ContainerVervoer\\ContainerVervoer\\ContainerVervoer.csproj",
+      "packagesPath": "C:\\Users\\luca_\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\luca_\\source\\repos\\ContainerVervoer\\ContainerVervoer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\calin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\luca_\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
