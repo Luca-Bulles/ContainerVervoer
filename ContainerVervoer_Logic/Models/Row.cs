@@ -8,10 +8,12 @@ namespace ContainerVervoer_Logic.Models
     public class Row
     {
         public List<Stack> Stacks { get; private set; }
+        public int RowCapacity { get; private set; }
 
-        public Row()
+        public Row(int rowCapacity)
         {
             Stacks = new List<Stack>();
+            RowCapacity = rowCapacity;
         }
         public void AddStack(Stack stack)
         {

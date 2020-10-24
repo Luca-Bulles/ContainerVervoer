@@ -7,18 +7,19 @@ namespace ContainerVervoer_Logic
 {
     public class Stack
     {
-        public int Capacity { get; set; }
+        public int Capacity { get; private set; }
         public List<Container> Containers { get; private set; }
 
-        public Stack()
+        public Stack(int capacity)
         {
             Containers = new List<Container>();
-            Capacity = 5;
+            Capacity = capacity;
         }
+
         public void Add(Container container)
         {
             Containers.Add(container);
-                Capacity--;
+            Capacity--;
 
         }
 

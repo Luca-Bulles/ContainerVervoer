@@ -8,6 +8,7 @@ namespace ContainerVervoer_Logic.Algorithms
     public class StackAlgorithms : IStackAlgorithms
     {
         private Stack _stack;
+
         public bool CheckStackCapacity(Stack stack)
         {
             return (stack.Containers.Count < stack.Capacity);
@@ -17,11 +18,12 @@ namespace ContainerVervoer_Logic.Algorithms
         {
             if (CheckStackCapacity(stack))
             {
-                stack.Containers.Add(container);
-            } else
+                stack.Add(container);
+            } 
+            else
             {
-                _stack = new Stack();
-                _stack.Containers.Add(container);
+                _stack = new Stack(stack.Capacity);
+                _stack.Add(container);
             }
         }
 
