@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <Folder Include="Algorithms\" />
+    <Folder Include="Interfaces\" />
   </ItemGroup>
 
 </Project>

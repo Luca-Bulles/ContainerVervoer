@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using ContainerVervoer_Interfaces;
 
 namespace ContainerVervoer_Logic.Models
 {
-    public class Ship : IShip
+    public class Ship
     {
         public int MinimumWeight { get; private set; }
         public int MaximumStackWeight { get; private set; }

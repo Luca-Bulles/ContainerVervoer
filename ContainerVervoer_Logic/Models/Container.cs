@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using IContainer = ContainerVervoer_Interfaces.IContainer;
 
 namespace ContainerVervoer_Logic
 {
-    public class Container : IContainer
+    public class Container
     {
         public bool IsValuable { get; private set; }
         public bool IsCooled { get; private set; }

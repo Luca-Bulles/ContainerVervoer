@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using ContainerVervoer_Logic.Interfaces;
+
 
 namespace ContainerVervoer_Logic.Models
 {
-    public class Row : IRow
+    public class Row
     {
         public List<Stack> Stacks { get; private set; }
 
