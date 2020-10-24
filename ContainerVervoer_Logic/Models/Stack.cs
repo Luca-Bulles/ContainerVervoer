@@ -7,21 +7,28 @@ namespace ContainerVervoer_Logic
 {
     public class Stack
     {
+        public int Capacity { get; set; }
         public List<Container> Containers { get; private set; }
 
         public Stack()
         {
             Containers = new List<Container>();
+            Capacity = 5;
         }
         public void Add(Container container)
         {
             Containers.Add(container);
+                Capacity--;
+
         }
 
         public void Remove(Container container)
         {
             Containers.Remove(container);
+            Capacity++;
         }
+
+       
 
         public int CheckValuablesInStack()
         {
