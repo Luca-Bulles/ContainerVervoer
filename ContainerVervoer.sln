@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContainerVervoer", "Contain
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContainerVervoer_Logic", "ContainerVervoer_Logic\ContainerVervoer_Logic.csproj", "{DE09D37D-87DA-4BD4-AB2B-AAED2CCBD8EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContainerVervoer_Form", "ContainerVervoer_Form\ContainerVervoer_Form.csproj", "{326FC556-67D9-4F3F-9B42-9919FECFE1C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContainerVervoer_Form", "ContainerVervoer_Form\ContainerVervoer_Form.csproj", "{326FC556-67D9-4F3F-9B42-9919FECFE1C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContainerVervoer_FormUser", "ContainerVervoer_FormUser\ContainerVervoer_FormUser.csproj", "{32999BEF-456C-4C48-B205-9C1F9C38D4FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{326FC556-67D9-4F3F-9B42-9919FECFE1C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{326FC556-67D9-4F3F-9B42-9919FECFE1C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{326FC556-67D9-4F3F-9B42-9919FECFE1C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32999BEF-456C-4C48-B205-9C1F9C38D4FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32999BEF-456C-4C48-B205-9C1F9C38D4FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32999BEF-456C-4C48-B205-9C1F9C38D4FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32999BEF-456C-4C48-B205-9C1F9C38D4FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
